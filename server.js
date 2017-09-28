@@ -1,5 +1,8 @@
 //  OpenShift sample Node application
+//npm modules that also need to be in the package.json file
 var express = require('express'),
+    webServer = require('./webServer.js').webServer,//our own file
+    torontoBikes = require('./torontoBikes.js').torontoBikes,
     app     = express(),
     morgan  = require('morgan');
     
@@ -99,6 +102,7 @@ initDb(function(err){
   console.log('Error connecting to Mongo. Message:\n'+err);
 });
 
+//start the server listening for requests
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
 
