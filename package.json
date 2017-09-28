@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-ex",
+  "name": "Bike-Stations-App",
   "version": "0.0.1",
-  "description": "Node.js sample app for OpenShift 3",
+  "description": "Toronto live Bike Stations Application",
   "main": "server.js",
   "dependencies": {
     "chai": "^3.5.0",
